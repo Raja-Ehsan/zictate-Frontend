@@ -5,7 +5,7 @@ export default function Sidebar() {
     const currentUser = JSON.parse(sessionStorage.getItem("User"));
     const navigate = useNavigate();
     function handleLogout() {
-        fetch('/logout',{
+        fetch('https://zictate.herokuapp.com/logout',{
             method: 'POST',
             credentials: 'include' 
           }).then(res=>res.json()).then()

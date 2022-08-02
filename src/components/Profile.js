@@ -30,7 +30,7 @@ export default function Profile() {
 
     if (uploadImage) {
         console.log('cover')
-        fetch("/addCoverPhoto", {
+        fetch("https://zictate.herokuapp.com/addCoverPhoto", {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -41,7 +41,7 @@ export default function Profile() {
     }
     else if (uploadImage1) {
         console.log('profile')
-        fetch("/addProfilePhoto", {
+        fetch("https://zictate.herokuapp.com/addProfilePhoto", {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -63,7 +63,7 @@ export default function Profile() {
         data.append("file", fileUploaded)
         data.append("name", fileUploaded.name)
 
-        fetch('/uploadImage', {
+        fetch('https://zictate.herokuapp.com/uploadImage', {
             method: 'POST',
             body: data
         })
@@ -76,7 +76,7 @@ export default function Profile() {
         data.append("file", fileUploaded)
         data.append("name", fileUploaded.name)
 
-        fetch('/uploadImage', {
+        fetch('https://zictate.herokuapp.com/uploadImage', {
             method: 'POST',
             body: data
         })
@@ -86,7 +86,7 @@ export default function Profile() {
 
 
     React.useEffect(() => {
-        fetch('/refresh').then(res => {
+        fetch('https://zictate.herokuapp.com/refresh').then(res => {
             if (res.status === 401) navigate('/401')
             else if (res.status === 403) navigate('/403')
         })
@@ -94,7 +94,7 @@ export default function Profile() {
 
     const addFriend = () => {
         if (!added) {
-            fetch("/addConversationId", {
+            fetch("https://zictate.herokuapp.com/addConversationId", {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ conversationId: conversationId })
@@ -112,7 +112,7 @@ export default function Profile() {
             setAdded(true)
         }
         else {
-            fetch("/removeFriend", {
+            fetch("https://zictate.herokuapp.com/removeFriend", {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ friendId: id })
@@ -123,7 +123,7 @@ export default function Profile() {
 
     console.log(conversationId)
     React.useEffect(() => {
-        fetch(`/checkFriend`,
+        fetch(`https://zictate.herokuapp.com/checkFriend`,
             {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -140,7 +140,7 @@ export default function Profile() {
             })
     }, [])
     React.useEffect(() => {
-        fetch(`/${id}/conversations`)
+        fetch(`https://zictate.herokuapp.com/${id}/conversations`)
             .then(res => res.json())
             .then(res => {
                 if (!res.message) {
@@ -150,7 +150,7 @@ export default function Profile() {
             })
     }, [])
     React.useEffect(() => {
-        fetch(`/getConversationId`)
+        fetch(`https://zictate.herokuapp.com/getConversationId`)
             .then(res => res.json())
             .then(res => {
                 console.log("3")
@@ -158,7 +158,7 @@ export default function Profile() {
             })
     }, [])
     React.useEffect(() => {
-        fetch(`/Profilee/${id}`)
+        fetch(`https://zictate.herokuapp.com/Profilee/${id}`)
             .then(res => res.json())
             .then(res => {
                 console.log("4")

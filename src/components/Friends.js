@@ -16,14 +16,14 @@ const navigate = useNavigate();
     const [allFriends,setAllFriends]=useState();
 
     useEffect(() => {
-        fetch('/refresh').then(res => {
+        fetch('https://zictate.herokuapp.com/refresh').then(res => {
             if (res.status === 401) navigate('/401')
             else if (res.status === 403) navigate('/403')
         })
     })
 
     useEffect(() => {
-        currentUser?fetch(`/${currentUser.id}/conversations`)
+        currentUser?fetch(`https://zictate.herokuapp.com/${currentUser.id}/conversations`)
             .then(res => res.json())
             .then(data => {
                 setAllFriends(data.friends)

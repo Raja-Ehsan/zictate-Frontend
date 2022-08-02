@@ -83,7 +83,7 @@ export default function Login() {
                     value={FormData.username}
                     onChange={handleChange}></input> <br />
                 {identify.state ? <p className="error"> <small style={identify.style}>Email or Password is not correct</small> </p> : ""}
-                <a className="signup" href="/register">Signup</a>
+                <a className="signup" href="#/register">Signup</a>
                 <button className="login-button" onClick={handleSubmit} >Login</button>
             </div>
         </div>

@@ -18,7 +18,7 @@ export default function Posts(props) {
         setIsLiked(!isLiked)
     }
     useEffect(() => {
-        fetch('/getlikes', {
+        fetch('https://zictate.herokuapp.com/getlikes', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ postId: props.postId })
@@ -29,7 +29,7 @@ export default function Posts(props) {
     }, [props.postId])
 
     useEffect(() => {
-        fetch('/getcomments', {
+        fetch('https://zictate.herokuapp.com/getcomments', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ postId: props.postId })
@@ -49,7 +49,7 @@ export default function Posts(props) {
             profileImage: currentUser.profileImage
 
         }
-        fetch(`/addComment`, {
+        fetch(`https://zictate.herokuapp.com/addComment`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(comment)
@@ -92,8 +92,8 @@ export default function Posts(props) {
                     <div className="postWrapper">
                         <div className="postTop">
                             <div className="postTopLeft">
-                            <a className="lik" href={`/Profile/${props.id}`}><img className="postProfileImg"  src={PF+`/${props.profileImage}`} alt="" /></a>
-                            <a className="lik" href={`/Profile/${props.id}`}><span className="postUsername" >{props.you ? "You" : props.user_name}</span></a>
+                            <a className="lik" href={`#/Profile/${props.id}`}><img className="postProfileImg"  src={PF+`/${props.profileImage}`} alt="" /></a>
+                            <a className="lik" href={`#/Profile/${props.id}`}><span className="postUsername" >{props.you ? "You" : props.user_name}</span></a>
                            
                             </div>
                             <div className="postTopRight">

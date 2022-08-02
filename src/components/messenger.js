@@ -22,7 +22,7 @@ export default function Messenger() {
     const scrollRef = useRef();
 
     React.useEffect(() => {
-        fetch('/refresh').then(res => {
+        fetch('https://zictate.herokuapp.com/refresh').then(res => {
             if (res.status === 401) navigate('/401')
             else if (res.status === 403) navigate('/403')
         })
@@ -88,7 +88,7 @@ export default function Messenger() {
     }, [User?.id, User?.user_name])
 
     React.useEffect(() => {
-        currentFriend ? fetch(`/conversations/${currentFriend.conversationID}`).then(res => res.json())
+        currentFriend ? fetch(`https://zictate.herokuapp.com/conversations/${currentFriend.conversationID}`).then(res => res.json())
             .then(data => {
                 console.log(data)
                 if (data.mesage)
@@ -100,7 +100,7 @@ export default function Messenger() {
     }, [currentFriend])
 
     React.useEffect(() => {
-        currentUser ? fetch(`/${currentUser.userId}/conversations`)
+        currentUser ? fetch(`https://zictate.herokuapp.com/${currentUser.userId}/conversations`)
             .then(res => res.json())
             .then(data => {
                 if (!data.message) {
@@ -125,7 +125,7 @@ export default function Messenger() {
             senderID: currentUser.userId,
             text: newMessage
         }
-        fetch(`/${currentUser.userId}/conversation/send`, {
+        fetch(`https://zictate.herokuapp.com/${currentUser.userId}/conversation/send`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(message)

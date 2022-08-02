@@ -8,7 +8,7 @@ export default function SearchBar(props) {
     const currentUser = JSON.parse(sessionStorage.getItem("User"));
     const [allFriends, setAllFriends] = useState();
     useEffect(() => {
-        fetch(`/getAllUsers`)
+        fetch(`https://zictate.herokuapp.com/getAllUsers`)
             .then(res => res.json())
             .then(data => {
                 setAllFriends(data)

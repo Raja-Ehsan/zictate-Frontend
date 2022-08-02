@@ -81,7 +81,7 @@ export default function Register() {
         }
         else {
             console.log("ueee")
-            fetch("/signup", {
+            fetch("https://zictate.herokuapp.com/signup", {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 body: JSON.stringify(formdata)

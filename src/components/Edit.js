@@ -61,7 +61,7 @@ export default function Edit() {
     })
 
     useEffect(() => {
-        fetch(`/Profilee/${currentUser.id}`)
+        fetch(`https://zictate.herokuapp.com/Profilee/${currentUser.id}`)
             .then(res => res.json())
             .then(res => {
                 setformdata({ ...res, password_: '' })
@@ -105,7 +105,7 @@ export default function Edit() {
             })
         }
         else {
-            fetch(`/updateProfile/${currentUser.id}`, {
+            fetch(`https://zictate.herokuapp.com/updateProfile/${currentUser.id}`, {
                 method: 'post',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 body: JSON.stringify(formdata)

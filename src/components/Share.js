@@ -11,7 +11,7 @@ export default function Share(props) {
     const [add,setAdd]=useState(false)
     const addPost = () => {       
 
-        fetch("/addPost", {
+        fetch("https://zictate.herokuapp.com/addPost", {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -33,7 +33,7 @@ export default function Share(props) {
         data.append("file",fileUploaded)
         data.append("name",fileUploaded.name)
 
-        fetch('/uploadImage',{
+        fetch('https://zictate.herokuapp.com/uploadImage',{
             method: 'POST',
             body: data
         })

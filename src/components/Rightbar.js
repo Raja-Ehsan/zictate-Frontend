@@ -10,7 +10,7 @@ export default function Rightbar(props) {
   const navigate = useNavigate();
 
   function handleLogout() {
-    fetch('/logout',{
+    fetch('https://zictate.herokuapp.com/logout',{
         method: 'POST',
         credentials: 'include' 
       }).then(res=>res.json()).then()
@@ -37,7 +37,7 @@ export default function Rightbar(props) {
     else {
       console.log(index.user_name + User?.user_name)
       return (
-        <a href={`/Profile/${index.userId}`}><button className="onlineList" onClick={() => { props.func(index.userId) }}><div className="online-info">
+        <a href={`#/Profile/${index.userId}`}><button className="onlineList" onClick={() => { props.func(index.userId) }}><div className="online-info">
         <img className="online-icon" src={PF+'/'+index.profileImage} alt="" />
         <span className="online-name">{index.user_name} </span>
       </div>
@@ -58,8 +58,8 @@ export default function Rightbar(props) {
 
   const user= User? users?.map((value)=>{
     return( <div className="infoContainer">
-    <a className="lik" href={`/Profile/${value.id}`}><img className="ProfileImg" src={PF+'/'+value.profileImage } alt="" /></a>
-    <a className="lik" href={`/Profile/${value.id}`}> <span className="userText">
+    <a className="lik" href={`#/Profile/${value.id}`}><img className="ProfileImg" src={PF+'/'+value.profileImage } alt="" /></a>
+    <a className="lik" href={`#/Profile/${value.id}`}> <span className="userText">
     {value.user_name}
   </span></a>
   
@@ -70,8 +70,8 @@ export default function Rightbar(props) {
       <>
       <div className="cunt">
         <div className="infoContainer">
-         <a className="lik" href={`/Profile/${User?.id}`}><img className="userProfileImg" src={PF+'/'+User?.profileImage } alt="" /></a>
-         <a  className="lik" href={`/Profile/${User?.id}`}><span className="nameText">
+         <a className="lik" href={`#/Profile/${User?.id}`}><img className="userProfileImg" src={PF+'/'+User?.profileImage } alt="" /></a>
+         <a  className="lik" href={`#/Profile/${User?.id}`}><span className="nameText">
             {User?.user_name}
           </span></a> 
           

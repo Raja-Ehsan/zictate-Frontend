@@ -12,17 +12,17 @@ export default function Feed(props) {
     useEffect(() => {
 
         if (props.profile) {
-            fetch(`/posts/${props.userid}`).then(res => res.json()).then(res => {
+            fetch(`https://zictate.herokuapp.com/posts/${props.userid}`).then(res => res.json()).then(res => {
                 setAllPosts(res.results)
             })
         }
     }, [props.profile])
 
     useEffect(() => {
-        fetch('/posts').then(res => res.json()).then(res => {
+        fetch('https://zictate.herokuapp.com/posts').then(res => res.json()).then(res => {
             setAllPosts(res.results)
         })
-        
+
     })
     function refreshPage() {
         setRefresh(true)
