@@ -128,7 +128,7 @@ export default function Messenger() {
         fetch(`/${currentUser.userId}/conversation/send`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(msessage)
+            body: JSON.stringify(message)
         }).then((res) => {
             return res.json()
         }).then((res) => {
