@@ -1,0 +1,53 @@
+.sideBar{
+    width: 100%;
+    height: 100vw;
+    background-color: rgb(36, 35, 35);
+    box-shadow: 2px 0px 10px rgb(33, 32, 32);
+    border-radius: 10px;
+}
+
+.sidemenu-item{
+    list-style-type: none;
+    align-items: center;
+    padding: 0.1rem;
+    background-color: rgb(33, 32, 32);
+    border-radius: 20px;
+}
+.sidemenu-item>li{
+    text-align: center;
+    margin-top: 5px;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.sidemenu-item>li:hover{
+    background: rgb(51, 51, 51);
+}
+.sidemenu-item>li>span{
+    margin-left: 15px;
+    font-size: large;
+    color: rgb(145, 145, 145);
+}
+@media only screen and (max-width: 600px) {
+    .dropDown {
+        width:150px;
+    }
+    .sidemenu-item>span{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .dropDown{
+    transform: translateX(15%);
+    }
+    .sidemenu-item>li{
+        padding: 5px;
+    }
+  }
+
+
+
+.messengerIconD{
+    cursor: pointer;
+}

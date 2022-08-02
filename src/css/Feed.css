@@ -1,0 +1,16 @@
+.feedWrapper{
+    background-color: rgb(24, 23, 23);
+    margin-left:5px ;
+}
+.information{
+    display:none;
+    background-color: rgb(33, 32, 32);
+    border-radius: 10px;
+    padding: 5px;
+    margin-top:25px;
+}
+@media only screen and (max-width: 780px) {
+    .information{
+        display:block;
+    }
+  }

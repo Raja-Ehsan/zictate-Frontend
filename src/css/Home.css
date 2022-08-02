@@ -1,0 +1,34 @@
+.home{
+    height: 100%;
+    display: flex;
+    background-color: rgb(24, 23, 23);
+}
+
+.sidebar{
+    flex:3;
+}
+@media only screen and (max-width: 1000px) {
+    .sidebar {
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 780px) {
+    .rightbar {
+        display: none;
+    }
+    .feed{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .feed{
+        margin: auto;
+    }
+}
+.feed{
+    flex:6;
+}
+.rightbar{
+    flex:3;
+}

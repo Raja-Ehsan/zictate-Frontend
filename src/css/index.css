@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+nav img {
+    width:40px;
+}
+nav{
+
+    background-color: #21222A;
+    padding: 0px 15px 0px 15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 5px #21222A;
+    font-size: 20px;
+}
+.nav-title{
+    color: #DEEBF8;
+    font-weight: 600;
+}
+.portion{
+    margin:5px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-text{
+    padding-left: 10px;
+    color: #61DAFB;
+    font-weight: 700;
+    font-size: 22px;
+}
+.buttons> button{
+    margin: 5px;
+    padding:5px;
+    width:100px;
+    color:#61DAFB;
+    background-color: rgb(47, 46, 46);
+}

@@ -1,0 +1,63 @@
+
+.FriendsList{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(237, 234, 234);
+    margin:5px;
+    font-size: medium;
+    border-radius: 10px;
+    color: black;
+    border: none;
+    -webkit-box-shadow: 0 0 5px 2px rgb(166, 166, 166);
+    -moz-box-shadow: 0 0 5px 2px rgb(166, 166, 166);
+    box-shadow: 0 0 5px 2px rgb(166, 166, 166);
+}
+.online-circle{
+    position: absolute;
+    border: 1px solid black;
+    top:0px;
+    right: 0px;
+    border-radius: 10px;
+    height: 10px;
+    background-color:rgb(22, 173, 22);
+    width: 10px;
+    border: none;
+    box-shadow: -2px -2px 5px rgb(152, 152, 152);
+}
+.offline-circle{
+    position: absolute;
+    border: 1px solid black;
+    top:0px;
+    right: 0px;
+    border-radius: 10px;
+    height: 10px;
+    background-color:rgb(255, 255, 255);
+    width: 10px;
+    border: none;
+    box-shadow: -2px -2px 5px rgb(152, 152, 152);
+}
+.FriendsList:hover{
+    cursor: pointer;
+    background-color: rgb(196, 196, 196);
+}
+.friend-info{
+    display: flex;
+}
+@media (max-width: 800px) {
+    .friend-info{
+        font-size: 15px;
+    }
+  }
+.friend-name{
+    margin-top: 8px;
+    flex:80%;
+    text-align: center;
+}
+
+.profile-icon{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}

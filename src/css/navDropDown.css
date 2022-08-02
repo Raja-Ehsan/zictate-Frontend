@@ -1,0 +1,51 @@
+.dropDown{
+    position: absolute;
+    top:62px;
+    width:200px;
+    transform: translateX(10%);
+    background-color: rgb(49, 49, 49);
+    z-index: +1;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid rgb(52, 52, 52);;
+}
+
+.menu-item{
+    list-style-type: none;
+    align-items: center;
+    padding: 0.1rem;
+}
+.menu-item>li{
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu-item>li:hover{
+    cursor: pointer;
+    background: grey;
+}
+.menu-item>li>span{
+    margin-left: 15px;
+    font-size: large;
+}
+@media only screen and (max-width: 600px) {
+    .dropDown {
+        width:150px;
+    }
+    .menu-item>li>span{
+        font-size: 18px;
+    }
+    .dropDown{
+    transform: translateX(15%);
+    }
+    .menu-item>li{
+        padding: 5px;
+    }
+  }
+
+
+
+.messengerIconD{
+    cursor: pointer;
+}

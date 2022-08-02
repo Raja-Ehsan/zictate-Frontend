@@ -1,0 +1,56 @@
+.search-dropDown{
+    position: absolute;
+    top:62px;
+    left: 26%;
+    width:450px;
+    height: 280px;
+    background-color: rgb(49, 49, 49);
+    z-index: +1;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid rgb(52, 52, 52);;
+    overflow-y: scroll;
+}
+
+.s-menu-item{
+    list-style-type: none;
+    align-items: center;
+    padding: 0.1rem;
+}
+.menu-item>li{
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu-item>li:hover{
+    cursor: pointer;
+    background: grey;
+}
+.menu-item>li>span{
+    margin-left: 15px;
+    font-size: large;
+}
+
+
+
+
+.messengerIconD{
+    cursor: pointer;
+}
+.profile-ic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+@media  (max-width: 600px) {
+    .menu-item>li>span{
+        margin-left: 15px;
+        font-size: small;
+    }
+  }
+  .profile-ic {
+    width: 34px;
+    height: 34px;
+}

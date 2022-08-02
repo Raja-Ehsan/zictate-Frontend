@@ -1,0 +1,183 @@
+.rightbar {
+    flex: 3.5;
+    background-color: rgb(35, 34, 34);
+    border-radius: 10px;
+    margin-left: 5px;
+  }
+
+  .messengerRightBar {
+    flex: 3.5;
+    background-color: rgb(78, 76, 76);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    border:3px solid rgb(26, 25, 25);
+    margin-left: 2.5px;
+    height: 79%;
+  }
+  .rightbarWrapper {
+    padding: 20px 20px 0 0;
+  }
+  
+  .infoContainer {
+    display: flex;
+    align-items: center;
+    margin:5px;
+  }
+  .lik{
+    text-decoration: none;
+  }
+  .userProfileImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .cunt{
+    display: flex;
+    justify-content: space-between;
+  }
+  .cunt>p{
+    color: rgb(165, 165, 165);
+    cursor: pointer;
+  }
+  .ProfileImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .nameText {
+    margin:8px;
+    margin-top: 5px;
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+  }
+  .userText {
+    margin:8px;
+    margin-top: 5px;
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+  }
+  
+  .rightbarAd {
+    width: 100%;
+    border-radius: 10px;
+    margin: 30px 0;
+  }
+  
+  .rightbarTitle{
+      margin-bottom: 20px;
+      color: rgb(156, 156, 156);
+  }
+  
+  .rightbarFriendList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .rightbarTitle{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .rightbarInfo{
+    margin-bottom: 30px;
+    color: gray;
+  }
+  
+  .rightbarInfoItem{
+    margin-bottom: 10px;
+  }
+  
+  .rightbarInfoKey{
+    font-weight: 500;
+    margin-right: 15px;
+    color: rgb(172, 172, 172);
+  }
+  
+  .rightbarInfoValue{
+    font-weight: 300;
+  }
+  
+  .rightbarFollowings{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(55, 55, 55);
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .rightbarFollowing{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(30, 30, 30);
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .rightbarFollowingImg{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .rightbarFollowingImg{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .rightbarFollowingName{
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+
+.online-info{
+    display: flex;
+}
+.online-name{
+    margin-top: 8px;
+    flex:80%;
+    text-align: center;
+}
+
+.online-icon{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.onlineList{
+  width: 100%;
+  height: 10%;
+  background-color: rgb(237, 234, 234);
+  margin:5px;
+  font-size: medium;
+  border-radius: 10px;
+  color: black;
+  border: none;
+  -webkit-box-shadow: 0 0 5px 2px rgb(50, 50, 50);
+  -moz-box-shadow: 0 0 5px 2px rgb(51, 51, 51);
+  box-shadow: 0 0 5px 2px rgb(47, 47, 47);
+}
+.onlineList:hover{
+  cursor: pointer;
+  background-color: rgb(196, 196, 196);
+}

@@ -1,0 +1,103 @@
+.messenger{
+    height: 100vh;
+    display: flex;
+    background-color: rgb(35, 34, 34);
+}
+
+.search-bar{
+    margin: auto;
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-bottom:10px ;
+    color: grey;
+}
+.chatMenu{
+    margin: 2.5px;
+    flex:3.5;
+}
+.chatBox{
+    flex:5.5;
+    margin: 2.5px;
+}
+.chatOnline{
+    margin: 2.5px;
+    flex:3;
+}
+
+.start-conversation{
+    text-align: center;
+    font-size: medium;
+    color: grey;
+}
+.title-name{
+    text-align: center;
+    border:1px solid rgb(26, 25, 25);
+    margin-bottom:0;  
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    background-color: rgb(21, 20, 20);;
+    color: white;
+}
+.chatMenuWrapper,.chatBoxWrapper,.chatOnlineWrapper{
+    border:1px solid rgb(26, 25, 25);
+    border-top:none ;
+    padding:20px;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 10px 10px;
+}
+.chatMenuWrapper{
+    overflow-y:scroll;
+}
+.chatBoxWrapper{
+    color: black;
+    border-left:none;
+}
+.chatBoxTop{
+    height: 76%;
+    overflow: scroll;
+    padding-right: 10px;
+}
+.chatBoxBottom{
+    padding: 3px;
+    margin-top:5px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 4px solid gray;
+    background-color: rgb(56, 55, 55);
+    border-radius: 8px;
+}
+.chatMessageInput{
+    width: 80%;
+    height:90px;
+    padding:10px;
+    color: rgb(40, 40, 40);
+}
+
+.clickk{
+    padding: 10px;
+}
+
+.chatSubmitButton{
+    width: 70px;
+    height: 40px;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+    background-color: teal;
+    background:rgb(43, 32, 158);
+    color: white;
+}
+@media (max-width: 800px) {
+    .chatOnline {
+        display: none;
+    }
+    .chatMessageInput{
+        height: 60px;
+    }
+  }

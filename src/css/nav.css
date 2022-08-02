@@ -1,0 +1,107 @@
+
+nav img {
+    width:40px;
+}
+nav{
+
+    background-color: rgb(21, 20, 20);;
+    padding: 0px 15px 0px 15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 5px 5px 5px #21222A; */
+    font-size: 20px;
+    height: 60px;
+}
+.nav-title{
+    color: #DEEBF8;
+    font-weight: 600;
+}
+.portion{
+    margin:5px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.logo-text{
+    padding-left: 10px;
+    color: #eff0f0;
+    font-weight: 700;
+    font-size: 22px;
+}
+.buttons> button{
+    margin: 5px;
+    padding:5px;
+    width:100px;
+    color:#ffffff;
+    background-color: rgb(47, 46, 46);
+}
+
+.messengerIcon{
+    font-size: 30px;
+    margin:10px;
+    cursor: pointer;
+}
+.notificationIcon{
+    
+    font-size: 30px;
+    margin:10px;
+    cursor: pointer;
+}
+.profileIcon{
+    font-size: 30px;
+    margin:10px;
+    cursor: pointer;
+}
+.profileIcon:hover{
+    border-radius: 10px;
+    background-color: rgb(61, 60, 60);
+}
+.notificationIcon:hover{
+    border-radius: 10px;
+    background-color: rgb(61, 60, 60);
+}
+.messengerIcon:hover{
+    border-radius: 10px;
+    background-color: rgb(61, 60, 60);
+}
+.logo:hover{
+    border-radius: 10px;
+    background-color: rgb(61, 60, 60);
+}
+.searchIcon:hover{
+    border-radius: 10px;
+    background-color: rgb(61, 60, 60);
+}
+.logo{
+    
+    font-size: 30px;
+    margin:10px;
+    cursor: pointer;
+}
+
+
+.search{
+    margin: 10px;
+    height: 25px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    text-align: center;
+}
+.searchIcon{
+    font-size: 30px;
+    margin-top:16px;
+    cursor: pointer;
+}
+.searchBar{
+    width: 20%;
+    display: flex;
+}
+@media only screen and (max-width: 600px) {
+ #home,#message,#noti,#acc,#drop,#search{
+    font-size: 18px;
+ }
+}

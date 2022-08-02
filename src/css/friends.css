@@ -1,0 +1,118 @@
+.friends {
+    height: 100vh;
+    display: flex;
+    background-color: rgb(24, 23, 23);
+}
+
+.sidebar {
+    flex: 3;
+}
+
+.friendz {
+    height: 100vh;
+    flex: 6;
+    margin: 10px;
+    margin-right: 22px;
+}
+
+.rightbar {
+    flex: 3;
+}
+
+.heading {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.list {
+
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.container {
+
+    background-color: rgb(24, 23, 23);
+}
+
+@media only screen and (max-width: 1000px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .rightbar {
+        display: none;
+    }
+
+    .friendz {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .friendz {
+        margin: auto;
+    }
+    .list{
+        padding: 0px;
+    }
+    .heading{
+        font-size: 15px;
+        padding: 0px;
+    }
+}
+
+.FriendsLis {
+    position: relative;
+    width: 60%;
+    height: 10%;
+    background-color: rgb(33, 33, 33);
+    margin: 5px;
+    font-size: large;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    border: none;
+    -webkit-box-shadow: 0 0 5px 2px rgb(31, 31, 31);
+    -moz-box-shadow: 0 0 5px 2px rgb(28, 28, 28);
+    box-shadow: 0 0 5px 2px rgb(33, 33, 33);
+}
+
+.FriendsLis:hover {
+    cursor: pointer;
+    background-color: rgb(43, 43, 43);
+}
+
+.friend-inf {
+    display: flex;
+    padding: 5px;
+}
+
+@media (max-width: 800px) {
+    .friend-info {
+        font-size: 15px;
+    }
+}
+
+.friend-name {
+    margin-top: 12px;
+    flex: 80%;
+    text-align: center;
+}
+
+.profile-ico {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+}
