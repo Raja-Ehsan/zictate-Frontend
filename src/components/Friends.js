@@ -12,13 +12,13 @@ export default function Friends() {
 const navigate = useNavigate();
     const PF=process.env.REACT_APP_PUBLIC_FOLDER;
     const currentUser = JSON.parse(sessionStorage.getItem("User"));
-    if(!currentUser) navigate('401')
+    if(!currentUser) navigate('#/401')
     const [allFriends,setAllFriends]=useState();
 
     useEffect(() => {
         fetch('/refresh').then(res => {
-            if (res.status === 401) navigate('/401')
-            else if (res.status === 403) navigate('/403')
+            if (res.status === 401) navigate('#/401')
+            else if (res.status === 403) navigate('#/403')
         })
     })
 

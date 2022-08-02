@@ -92,8 +92,8 @@ export default function Posts(props) {
                     <div className="postWrapper">
                         <div className="postTop">
                             <div className="postTopLeft">
-                            <a className="lik" href={`Profile/${props.id}`}><img className="postProfileImg"  src={PF+`/${props.profileImage}`} alt="" /></a>
-                            <a className="lik" href={`Profile/${props.id}`}><span className="postUsername" >{props.you ? "You" : props.user_name}</span></a>
+                            <a className="lik" href={`#/Profile/${props.id}`}><img className="postProfileImg"  src={PF+`/${props.profileImage}`} alt="" /></a>
+                            <a className="lik" href={`#/Profile/${props.id}`}><span className="postUsername" >{props.you ? "You" : props.user_name}</span></a>
                            
                             </div>
                             <div className="postTopRight">

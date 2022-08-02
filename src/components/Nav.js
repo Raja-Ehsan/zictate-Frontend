@@ -16,7 +16,7 @@ export default function Nav() {
     return (
         <nav >
             <div className="portion">
-                <h3 onClick={() => { navigate('/home') }} className="logo-text">Zictate</h3>
+                <h3 onClick={() => { navigate('#/home') }} className="logo-text">Zictate</h3>
             </div>
             <div className="searchBar">
                 <input placeholder="Search...."
@@ -28,10 +28,10 @@ export default function Nav() {
                 {showSearch ? <SearchBar searchTerm={searchTerm} /> : <></>}
             
             <div className="buttons">
-                <Home htmlColor="white" id='home' fontSize="medium" onClick={() => { navigate('/Home') }} className="messengerIcon" />
-                <Message htmlColor="white" id='message' fontSize="medium" onClick={() => { navigate('/messenger') }} className="messengerIcon" />
+                <Home htmlColor="white" id='home' fontSize="medium" onClick={() => { navigate('#/Home') }} className="messengerIcon" />
+                <Message htmlColor="white" id='message' fontSize="medium" onClick={() => { navigate('#/messenger') }} className="messengerIcon" />
                 <Notifications htmlColor="white" id='noti' fontSize="medium" className="notificationIcon" />
-                <AccountCircle htmlColor="white" id='acc' fontSize="medium" onClick={() => { navigate(`/Profile/${currentUser.id}`) }} className="profileIcon" />
+                <AccountCircle htmlColor="white" id='acc' fontSize="medium" onClick={() => { navigate(`#/Profile/${currentUser.id}`) }} className="profileIcon" />
                 <ArrowDropDown htmlColor="white" id='drop'  fontSize="medium" onClick={() => { setShow(!show) }} className="profileIcon" />
                 {show ? <NavDropDown /> : <></>}
             </div>
