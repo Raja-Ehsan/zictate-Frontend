@@ -87,8 +87,8 @@ export default function Profile() {
 
     React.useEffect(() => {
         fetch('/refresh').then(res => {
-            if (res.status === 401) navigate('#/401')
-            else if (res.status === 403) navigate('#/403')
+            if (res.status === 401) navigate('/401')
+            else if (res.status === 403) navigate('/403')
         })
     })
 

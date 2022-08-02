@@ -31,7 +31,7 @@ export default function Login() {
             })
         }
         else {
-            fetch("/login", {
+            fetch("http://localhost:3001/login", {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formdata)
@@ -48,7 +48,8 @@ export default function Login() {
                 return res.json()
             }).then((res) => {
                 sessionStorage.setItem("User", JSON.stringify(res.foundUser));
-                navigate('#/Home')
+                console.log('Hello')
+                navigate('/Home')
             })
         }
     }
@@ -82,7 +83,7 @@ export default function Login() {
                     value={FormData.username}
                     onChange={handleChange}></input> <br />
                 {identify.state ? <p className="error"> <small style={identify.style}>Email or Password is not correct</small> </p> : ""}
-                <a className="signup" href="#/register">Signup</a>
+                <a className="signup" href="/register">Signup</a>
                 <button className="login-button" onClick={handleSubmit} >Login</button>
             </div>
         </div>

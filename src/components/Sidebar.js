@@ -14,13 +14,13 @@ export default function Sidebar() {
     }
     return (<div className="sideBar">
         <ul className="sidemenu-item">
-            <li style={{ cursor: 'pointer' }} onClick={() => { navigate('#/Profile/' + currentUser.id) }}><AccountCircle htmlColor="white" className="messengerIconD" /> <span style={{ fontSize: '18px' }}>Profile</span> </li>
+            <li style={{ cursor: 'pointer' }} onClick={() => { navigate('/Profile/' + currentUser.id) }}><AccountCircle htmlColor="white" className="messengerIconD" /> <span style={{ fontSize: '18px' }}>Profile</span> </li>
             <hr style={{ backgroundColor: 'white', border: '.01px solid grey', width: '90%' }} />
             <li style={{ cursor: 'pointer' }}><Notifications htmlColor="white" variant="Filled" className="messengerIconD" /><span style={{ fontSize: '18px' }}>Notifications</span></li>
             <hr style={{ backgroundColor: 'white', border: '.01px solid grey', width: '90%' }} />
-            <li onClick={() => { navigate('#/edit') }} style={{ cursor: 'pointer' }}><Settings htmlColor="white" variant="Filled" className="messengerIconD" /><span style={{ fontSize: '18px' }}>Edit Profile</span></li>
+            <li onClick={() => { navigate('/edit') }} style={{ cursor: 'pointer' }}><Settings htmlColor="white" variant="Filled" className="messengerIconD" /><span style={{ fontSize: '18px' }}>Edit Profile</span></li>
             <hr style={{ backgroundColor: 'white', border: '.01px solid grey', width: '90%' }} />
-            <li onClick={() => { navigate('#s/friends') }}     style={{ cursor: 'pointer' }}><People htmlColor="white" className="messengerIconD" /><span style={{ fontSize: '18px' }}>All Friends</span></li>
+            <li onClick={() => { navigate('/friends') }}     style={{ cursor: 'pointer' }}><People htmlColor="white" className="messengerIconD" /><span style={{ fontSize: '18px' }}>All Friends</span></li>
             <hr style={{ backgroundColor: 'white', border: '.01px solid grey', width: '90%' }} />
             <li onClick={handleLogout} style={{ cursor: 'pointer' }}><Lock htmlColor="white" className="messengerIconD" /><span style={{ fontSize: '18px' }}>Logout</span></li>
             <hr style={{ backgroundColor: 'white', border: '.01px solid grey', width: '90%' }} />

@@ -22,6 +22,7 @@ export default function Feed(props) {
         fetch('/posts').then(res => res.json()).then(res => {
             setAllPosts(res.results)
         })
+        
     })
     function refreshPage() {
         setRefresh(true)

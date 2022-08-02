@@ -50,9 +50,9 @@ export default function Edit() {
         let response = await refresh()
         if (response.statuscode) {
             if (response.statuscode === 403)
-                navigate('#/403')
+                navigate('/403')
             else if (response.statuscode === 401)
-                navigate('#/401')
+                navigate('/401')
         }
     }
 
@@ -129,7 +129,7 @@ export default function Edit() {
                     })
                 }
                 else
-                navigate('#/Profile/' + currentUser.id)
+                navigate('/Profile/' + currentUser.id)
             })
         }
 

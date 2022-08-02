@@ -29,7 +29,7 @@ export default function SearchBar(props) {
             return (
                 <>
                     
-                    <li onClick={() => { navigate('#/Profile/' + value.id) }} style={value.id===currentUser.id?{display:'none'}:{}}  ><img className="profile-ic" src={PF + '/' + value.profileImage}></img> <span style={{marginTop:'10px'}}>{value.user_name}</span> </li>
+                    <li onClick={() => { navigate('/Profile/' + value.id) }} style={value.id===currentUser.id?{display:'none'}:{}}  ><img className="profile-ic" src={PF + '/' + value.profileImage}></img> <span style={{marginTop:'10px'}}>{value.user_name}</span> </li>
                     <hr style={value.id===currentUser.id?{display:'none'}:{}} />
                 </>
             )

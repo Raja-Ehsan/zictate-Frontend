@@ -19,11 +19,11 @@ export default function NavDropDown() {
     return (
         <div className="dropDown">
             <ul className="menu-item">
-                <li onClick={() => { navigate('#/Profile/' + currentUser.id) }}><AccountCircle htmlColor="white" className="messengerIconD" /> <span>Profile</span> </li>
+                <li onClick={() => { navigate('/Profile/' + currentUser.id) }}><AccountCircle htmlColor="white" className="messengerIconD" /> <span>Profile</span> </li>
                 <hr />
-                <li onClick={() => { navigate('#/edit') }}><Settings htmlColor="white" variant="Filled" className="messengerIconD" /><span>Edit Profile</span></li>
+                <li onClick={() => { navigate('/edit') }}><Settings htmlColor="white" variant="Filled" className="messengerIconD" /><span>Edit Profile</span></li>
                 <hr />
-                <li onClick={() => { navigate('#/friends') }}><People htmlColor="white"  className="messengerIconD" /><span>Friends</span></li>
+                <li onClick={() => { navigate('/friends') }}><People htmlColor="white"  className="messengerIconD" /><span>Friends</span></li>
                 <hr />
                 <li onClick={handleLogout}><Lock htmlColor="white" className="messengerIconD" /><span>Logout</span></li>
                 <hr />
