@@ -10,12 +10,11 @@ nav{
     justify-content: space-between;
     align-items: center;
     /* box-shadow: 5px 5px 5px #21222A; */
-    font-size: 20px;
     height: 60px;
 }
 .nav-title{
     color: #DEEBF8;
-    font-weight: 600;
+    font-weight: 400;
 }
 .portion{
     margin:5px;
@@ -84,7 +83,7 @@ nav{
 
 .search{
     margin: 10px;
-    height: 25px;
+    height: 20px;
     width: 100%;
     border-radius: 20px;
     border: none;
@@ -104,4 +103,7 @@ nav{
  #home,#message,#noti,#acc,#drop,#search{
     font-size: 18px;
  }
+ .logo-text{
+    font-size: 18px;
+}
 }

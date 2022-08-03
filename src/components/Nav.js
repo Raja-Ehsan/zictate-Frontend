@@ -23,7 +23,7 @@ export default function Nav() {
                 className="search"
                 type="text" name="search" id="search" onChange={(e)=>{setSearchTerm(e.target.value)}}  onFocus={()=>{setShowSearch(true)}}></input>
 
-            <ArrowDropDown id='search' htmlColor="white" fontSize="medium" onClick={()=>{setShowSearch(!showSearch)}} className="searchIcon" /></div>
+            <Search id='search' htmlColor="white" fontSize="medium" onClick={()=>{setShowSearch(!showSearch)}} className="searchIcon" /></div>
                 {showSearch ? <SearchBar searchTerm={searchTerm} /> : <></>}
             
             <div className="buttons">
