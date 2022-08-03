@@ -46,19 +46,19 @@ export default function Edit() {
 
 
 
-    async function checkauth() {
-        let response = await refresh()
-        if (response.statuscode) {
-            if (response.statuscode === 403)
-                navigate('/403')
-            else if (response.statuscode === 401)
-                navigate('/401')
-        }
-    }
+    // async function checkauth() {
+    //     let response = await refresh()
+    //     if (response.statuscode) {
+    //         if (response.statuscode === 403)
+    //             navigate('/403')
+    //         else if (response.statuscode === 401)
+    //             navigate('/401')
+    //     }
+    // }
 
-    React.useEffect(() => {
-        checkauth()
-    })
+    // React.useEffect(() => {
+    //     checkauth()
+    // })
 
     useEffect(() => {
         fetch(`https://zictate.herokuapp.com/Profilee/${currentUser.id}`)

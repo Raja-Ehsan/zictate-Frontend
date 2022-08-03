@@ -15,12 +15,12 @@ const navigate = useNavigate();
     if(!currentUser) navigate('/401')
     const [allFriends,setAllFriends]=useState();
 
-    useEffect(() => {
-        fetch('https://zictate.herokuapp.com/refresh').then(res => {
-            if (res.status === 401) navigate('/401')
-            else if (res.status === 403) navigate('/403')
-        })
-    })
+    // useEffect(() => {
+    //     fetch('https://zictate.herokuapp.com/refresh').then(res => {
+    //         if (res.status === 401) navigate('/401')
+    //         else if (res.status === 403) navigate('/403')
+    //     })
+    // })
 
     useEffect(() => {
         currentUser?fetch(`https://zictate.herokuapp.com/${currentUser.id}/conversations`)

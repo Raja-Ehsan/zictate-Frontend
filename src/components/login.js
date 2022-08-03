@@ -48,7 +48,7 @@ export default function Login() {
                 return res.json()
             }).then((res) => {
                 sessionStorage.setItem("User", JSON.stringify(res.foundUser));
-                console.log('Hello')
+                console.log
                 navigate('/Home')
             })
         }

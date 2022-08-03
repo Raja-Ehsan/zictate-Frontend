@@ -85,12 +85,12 @@ export default function Profile() {
     };
 
 
-    React.useEffect(() => {
-        fetch('https://zictate.herokuapp.com/refresh').then(res => {
-            if (res.status === 401) navigate('/401')
-            else if (res.status === 403) navigate('/403')
-        })
-    })
+    // React.useEffect(() => {
+    //     fetch('https://zictate.herokuapp.com/refresh').then(res => {
+    //         if (res.status === 401) navigate('/401')
+    //         else if (res.status === 403) navigate('/403')
+    //     })
+    // })
 
     const addFriend = () => {
         if (!added) {

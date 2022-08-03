@@ -21,12 +21,12 @@ export default function Messenger() {
     const [searchTerm, setSearchTerm] = useState("");
     const scrollRef = useRef();
 
-    React.useEffect(() => {
-        fetch('https://zictate.herokuapp.com/refresh').then(res => {
-            if (res.status === 401) navigate('/401')
-            else if (res.status === 403) navigate('/403')
-        })
-    })
+    // React.useEffect(() => {
+    //     fetch('https://zictate.herokuapp.com/refresh').then(res => {
+    //         if (res.status === 401) navigate('/401')
+    //         else if (res.status === 403) navigate('/403')
+    //     })
+    // })
     React.useEffect(() => {
         socket.current = io("ws://localhost:8000")
         socket.current.on("getMessage", (data) => {
