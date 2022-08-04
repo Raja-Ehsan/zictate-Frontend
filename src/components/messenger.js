@@ -29,7 +29,7 @@ export default function Messenger() {
     // })
     React.useEffect(() => {
         // socket.current = io("ws://localhost:8000")
-        socket.current = io("https://socket-zictate.herokuapp.com")
+        socket.current = io("https://socket-zictate.herokuapp.com/")
         socket.current.on("getMessage", (data) => {
             setArrivalMessage({
                 sender: data.senderId,
