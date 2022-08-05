@@ -10,8 +10,7 @@ import refresh from "../auth/auth"
 export default function Home() {
   const currentUser = JSON.parse(sessionStorage.getItem("User"));
   const navigate = useNavigate();
-  console.log(currentUser)
-  if(!currentUser) navigate('/401')
+  if(currentUser===null) navigate('/401')
   // React.useEffect(() => {
   //   fetch('https://zictate.herokuapp.com/refresh').then(res => {
   //     if (res.status === 401) 
