@@ -167,13 +167,14 @@ export default function Profile() {
     }, [id])
 
     React.useEffect(() => {
+        console.log("leeeee");
         if (id === currentUser?.id) {
+            console.log("aaaaa");
             setYou(true)
         }
-    }, [])
+    }, [currentUser?.id])
 
 
-    console.log("lululu");
     console.log(you)
 
     if (userData) {
