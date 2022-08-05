@@ -170,7 +170,7 @@ export default function Profile() {
         if (id === currentUser?.id) {
             setYou(true)
         }
-    }, [id, currentUser?.id])
+    }, [id])
 
 
     if (userData) {

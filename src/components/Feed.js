@@ -11,19 +11,16 @@ export default function Feed(props) {
     const currentUser = JSON.parse(sessionStorage.getItem("User"));
     useEffect(() => {
 
-        if (props.profile) {
+        props.profile?
             fetch(`https://zictate.herokuapp.com/posts/${props.userid}`).then(res => res.json()).then(res => {
                 setAllPosts(res.results)
-            })
-        }
-    }, [props.profile])
-
-    useEffect(() => {
-        fetch('https://zictate.herokuapp.com/posts').then(res => res.json()).then(res => {
+            }):
+            fetch('https://zictate.herokuapp.com/posts').then(res => res.json()).then(res => {
             setAllPosts(res.results)
         })
 
-    })
+    }, [])
+
     function refreshPage() {
         setRefresh(true)
     }
@@ -32,7 +29,7 @@ export default function Feed(props) {
     }) : null;
     return (
         <div className="feedWrapper">
-            <Share refresh={refreshPage} {...currentUser} />
+            {currentUser.id===props.userid?<></>:<Share refresh={refreshPage} {...currentUser} />}
             <div className="information">
                 {props.profile ? <Info info={props.info} friends={props.friends} /> : <></>}
             </div>
