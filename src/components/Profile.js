@@ -167,12 +167,7 @@ export default function Profile() {
     }, [id])
 
     React.useEffect(() => {
-        console.log("leeeee");
-        console.log(currentUser.id.toString())
-        console.log(id.toString())
-
-        if (id === currentUser.id) {
-            console.log("aaaaa");
+        if (id.toString() === currentUser?.id.toString()) {
             setYou(true)
         }
     }, [currentUser?.id])
