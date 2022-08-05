@@ -49,6 +49,7 @@ export default function Posts(props) {
             profileImage: currentUser.profileImage
 
         }
+        console.log(comment)
         fetch(`https://zictate.herokuapp.com/addComment`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
