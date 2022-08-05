@@ -173,6 +173,10 @@ export default function Profile() {
     // }, [id])
 
 
+    console.log("lululu");
+    console.log(id);
+    console.log(currentUser.id);
+
     if (userData) {
         return (
             <>
