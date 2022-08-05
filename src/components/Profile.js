@@ -166,11 +166,11 @@ export default function Profile() {
             })
     }, [id])
 
-    React.useEffect(() => {
-        if (id === currentUser?.id) {
-            setYou(true)
-        }
-    }, [id])
+    // React.useEffect(() => {
+    //     if (id === currentUser?.id) {
+    //         setYou(true)
+    //     }
+    // }, [id])
 
 
     if (userData) {
@@ -210,12 +210,12 @@ export default function Profile() {
                             {/* <div className="clear"></div> */}
                             <div className="profileInfo">
                                 <div className="container">
-                                    <h4 className="profileInfoName">{you ? "You" : userData.user_name}</h4>
+                                    <h4 className="profileInfoName">{id===currentUser.id  ? "You" : userData.user_name}</h4>
                                 </div>
 
                             </div>
                             <div className="friend">
-                                {you ? <button style={style} className="addFriendButton" type="hidden">{added ? " " : " "}</button> : <button onClick={addFriend} className="addFriendButton">{added ? "Added" : "Add Friend"}</button>} </div>
+                                {id===currentUser.id ? <button style={style} className="addFriendButton" type="hidden">{added ? " " : " "}</button> : <button onClick={addFriend} className="addFriendButton">{added ? "Added" : "Add Friend"}</button>} </div>
 
                         </div>
                         <div className="profileRightBottom">

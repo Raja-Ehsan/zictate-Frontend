@@ -29,11 +29,11 @@ export default function Feed(props) {
     }) : null;
     return (
         <div className="feedWrapper">
-            {currentUser?.id===props.userid?<Share refresh={refreshPage} {...currentUser} />:<></>}
+            {currentUser?.id===props.userid?<Share refresh={refreshPage} {...currentUser} />:<> {!props.profile?<><Share refresh={refreshPage} {...currentUser} /></>:<></>}</>}
             <div className="information">
                 {props.profile ? <Info info={props.info} friends={props.friends} /> : <></>}
             </div>
-            {allPosts?.length?<>{posts}</>:<> Nothing to show</>}
+            {allPosts?.length?<>{posts}</>:<div style={{display:'block',textAlign:'center',fontSize:'20px',margin:'20px'}}> Nothing to show</div>}
             
         </div>
     )
