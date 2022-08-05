@@ -217,7 +217,7 @@ export default function Profile() {
 
                             </div>
                             <div className="friend">
-                                {you ? <button style={style} className="addFriendButton" type="hidden">{added ? " " : " "}</button> : <button onClick={addFriend} className="addFriendButton">{added ? "Added" : "Add Friend"}</button>} </div>
+                                {you ? <button  className="addFriendButton" style={{display:'none'}} type="hidden">{added ? " " : " "}</button> : <button onClick={addFriend} className="addFriendButton">{added ? "Added" : "Add Friend"}</button>} </div>
 
                         </div>
                         <div className="profileRightBottom">

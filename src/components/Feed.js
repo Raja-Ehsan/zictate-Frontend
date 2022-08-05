@@ -33,7 +33,7 @@ export default function Feed(props) {
             <div className="information">
                 {props.profile ? <Info info={props.info} friends={props.friends} /> : <></>}
             </div>
-            {allPosts?.length?<>{posts}</>:<div style={{display:'block',textAlign:'center',fontSize:'20px',margin:'20px',color:'white',backgroundColor:'rgb(35, 34, 34)',borderRadius:'10px',padding:'10px'}}> Nothing to show</div>}
+            {allPosts?.length?<>{posts}</>:<div style={{display:'block',textAlign:'center',fontSize:'20px',margin:'20px',color:'white',backgroundColor:'rgb(35, 34, 34)',borderRadius:'10px',padding:'20px'}}> Nothing to show</div>}
             
         </div>
     )
