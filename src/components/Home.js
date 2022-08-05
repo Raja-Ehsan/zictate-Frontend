@@ -13,7 +13,9 @@ export default function Home() {
   console.log(currentUser)
   if(currentUser===null) {
     console.log("lulul")
-    navigate('/401')}
+    navigate('/401') 
+    console.log("lulul")
+  }
   // React.useEffect(() => {
   //   fetch('https://zictate.herokuapp.com/refresh').then(res => {
   //     if (res.status === 401) 
