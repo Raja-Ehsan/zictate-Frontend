@@ -17,6 +17,9 @@
     align-items: center;
     padding: 0.1rem;
 }
+.s-menu-item>li{
+    cursor: pointer;
+}
 .menu-item>li{
     display: flex;
     padding: 10px;

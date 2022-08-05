@@ -50,7 +50,7 @@ export default function Rightbar(props) {
     navigate(`/Profile/${id}`)
   }
   useEffect(()=>{
-   User?fetch('/getUsers/'+User.id).then((res)=>res.json())
+   User?fetch('https://zictate.herokuapp.com/getUsers/'+User.id).then((res)=>res.json())
     .then((res)=>{
       setUser(res)
     }):setUser('')
@@ -79,8 +79,8 @@ export default function Rightbar(props) {
         <p><small onClick={handleLogout}>Switch</small></p>
         </div>
         <hr style={{backgroundColor:'white',border:'.01px solid grey',width:'90%'}} />
-        <h6 className="rightbarTitle"><small>Suggestions for You</small></h6>
-        {user}
+        {props.messenger?<><h6 className="rightbarTitle"><small>Online Friends</small></h6> {friends} </>:<> <h6 className="rightbarTitle"><small>Suggestions for You</small></h6>
+        {user}</>}
         <ul className="rightbarFriendList">
         </ul>
       </>

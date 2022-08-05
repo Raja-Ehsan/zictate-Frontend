@@ -99,7 +99,7 @@ export default function Profile() {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ conversationId: conversationId })
             })
-            fetch("/addFriend", {
+            fetch("https://zictate.herokuapp.com/addFriend", {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
