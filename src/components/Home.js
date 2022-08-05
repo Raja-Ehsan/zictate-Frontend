@@ -13,7 +13,7 @@ export default function Home() {
   console.log(currentUser)
   if(currentUser===null) {
     console.log("lulul")
-    navigate('/401') 
+    this.props.history.push('/401')
     console.log("lulul")
   }
   // React.useEffect(() => {
