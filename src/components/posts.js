@@ -44,7 +44,7 @@ export default function Posts(props) {
         e.preventDefault();
         const comment = {
             postId: props.postId,
-            userId: currentUser.userId,
+            userId: currentUser.id,
             text: newComment,
             profileImage: currentUser.profileImage
 
