@@ -49,8 +49,6 @@ export default function Posts(props) {
             profileImage: currentUser.profileImage
 
         }
-        console.log("lll")
-        console.log(comment)
         fetch(`https://zictate.herokuapp.com/addComment`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -58,7 +56,7 @@ export default function Posts(props) {
         }).then((res) => {
             return res.json()
         }).then((res) => {
-            console.log("lulul")
+            console.log(res)
             if (res.message === "posted") {
                 if (allComments) {
                     setAllComments((prev) => {
