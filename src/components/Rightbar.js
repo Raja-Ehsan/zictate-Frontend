@@ -56,7 +56,7 @@ export default function Rightbar(props) {
     }):setUser('')
   },[])
 
-  const user= User? users.map((value)=>{
+  const user= User? users?.map((value)=>{
     return( <div className="infoContainer">
     <a className="lik" href={`#/Profile/${value.id}`}><img className="ProfileImg" src={PF+'/'+value.profileImage } alt="" /></a>
     <a className="lik" href={`#/Profile/${value.id}`}> <span className="userText">
