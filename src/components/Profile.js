@@ -171,7 +171,7 @@ export default function Profile() {
         console.log(currentUser.id)
         console.log(id)
 
-        if (id === currentUser?.id) {
+        if (id === currentUser.id) {
             console.log("aaaaa");
             setYou(true)
         }
