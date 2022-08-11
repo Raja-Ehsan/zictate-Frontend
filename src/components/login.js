@@ -33,6 +33,7 @@ export default function Login() {
         else {
             fetch("https://zictate.herokuapp.com/login", {
                 method: 'POST',
+                credentials: 'include',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formdata)
             }).then((res) => {
